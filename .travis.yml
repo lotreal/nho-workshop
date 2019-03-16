@@ -1,11 +1,6 @@
 language: java
-jdk:
-  - oraclejdk8
-  - oraclejdk11
-  - openjdk10
-  - openjdk11
 script:
-  - ./gradlew test
+  - ./gradlew build --scan -s
 deploy:
  provider: heroku
  api-key:
