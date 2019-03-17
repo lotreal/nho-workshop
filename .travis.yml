@@ -1,6 +1,14 @@
 language: java
+
+addons:
+  sonarcloud:
+    organization: "lotreal-github"
+    token:
+      secure: $SONAR_TOKEN
+
 script:
   - ./gradlew build --scan -s
+
 deploy:
  provider: heroku
  api-key:
