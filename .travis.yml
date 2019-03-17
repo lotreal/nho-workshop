@@ -3,7 +3,8 @@ language: java
 addons:
   sonarcloud:
     organization: "lotreal-github"
-    token: $SONAR_TOKEN
+    token:
+      secure: "gdYv8a0i34tp43TISV9LAMywQPvihuBDcoeSaFoGTr47DIJ36r+Qb8U8JVtu9ppNs3C2Yg0cvtzAo7ZYKKpemrcRCIixrA9XHpOQAPHFnkB6XorCPJ+sbH92H4xyG4o3ddPMtYKJy6NKi+7HIeb4B2WcWwfjXgNuIynOLNQ9Po1UD53+EY8BevGYy/tqV1GCU0GOUc2lhk4Eh6XFa+MPchM+FPXdYuuQiUFjU/tbAPkwFFTS9CQibAsKUBcI8STNs7mW0Glbyr9J+BfGQdc+mKEbOa3GDvoBCeFSbhDH4NqJr+CeOUnhb8voCqCydLOzeUifa6K9xEmAvUYzxXYbtvAlTAwdSuuQU28S/d3F1FDzwPqQzgGljIjTiPOq47vKSw4mysLvHSSn4FhrkpNvMrUdsqBH+llL4U1f4jqjJjJG1knF069G2veU7624QmP3eH/kdAwJdPsRd34G4QXHrNLoduFOWU8yNMoJMeGzHFsrC8DfyXwPq1zhlgt+YUjMZAnUpJV0aOnuGWddsXq1xywFF7tSLfQSqjuJgKGAcbUVTj9x7FH05GZsfBPXiPtseKbg5g8KGWP/qrnNVtOs93NUCTgVzb4I9TViKXEpUSYDH287SAiVkbjaw528AngAG7n78SANbLXC3HcuTdyt/QSubpNUqKb25RDCNG9iYWE="
 
 script:
   - ./gradlew sonarqube
