@@ -3,8 +3,7 @@ language: java
 addons:
   sonarcloud:
     organization: "lotreal-github"
-    token:
-      secure: $SONAR_TOKEN
+    token: $SONAR_TOKEN
 
 script:
   - ./gradlew sonarqube
